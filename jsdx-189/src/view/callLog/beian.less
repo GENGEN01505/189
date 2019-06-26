@@ -1,0 +1,572 @@
+.beiAnBoxModal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(55, 55, 55, 0.6);
+  height: 100%;
+  z-index:1000;
+  max-height:100%;
+  overflow:auto;
+  padding:100px 0;
+  .beiAnClose{
+    position:fixed;
+    top:50px;
+    right:50px;
+    cursor:pointer;
+    color:rgba(255,255,255,.6);
+  }
+  .beiAnClose:hover{
+    color:#fff;
+  }
+  .beiAnBox{
+
+    text-align:center;
+
+    width:555px;
+    height:770px;
+    background: #fff;
+    // background-image: url('../../assets/images/beian.png');
+    // background-size: cover;
+    // background-position: center;
+    margin:0 auto;
+    font-size: 14px;
+    color: #151515;
+    position: relative;
+    .beiAnInfo{
+      width:100%;
+      height:100%;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: 1000000;
+      padding: 120px 80px;
+      .beianIMG{
+        position: absolute;
+        top:200px;
+        right: 85px;
+      }
+      h1{
+        font-size: 20px;
+        color: #333333;
+        letter-spacing: 5px;
+      }
+      p{
+         line-height:24px;
+         text-align: justify;
+         padding: 0 10px;
+         word-break:break-all;
+         word-wrap:break-word;
+         font-size: 12px;
+      }
+      .info_p{
+
+        font-size: 15px;
+        span{
+          letter-spacing: 3px;
+          font-weight: 600;
+        }
+      }
+      .describe_P{
+        text-indent:25px;
+      }
+    }
+    .beianBNG{
+      position: absolute;
+      top:20px;
+      left:30px;
+      z-index: 1000;
+    }
+    -webkit-touch-callout: none; /* iOS Safari */
+
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+
+    -khtml-user-select: none; /* Konqueror */
+
+    -moz-user-select: none; /* Firefox */
+
+    -ms-user-select: none; /* Internet Explorer/Edge */
+
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  }
+
+}
+.audioBox{
+  background: rgba(0,0,0,0.80);
+   border-radius: 4px;
+   width:60%;
+   height:80px;
+   color:#fff;
+   position:fixed;
+   bottom:20px;
+   margin:0 auto;
+   margin-left: 10%;
+   z-index:10;
+}
+.audioBox>div{
+  display:inline-block;
+}
+.audioBox>div#left-audio{
+   width:40px;
+   position:relative;
+   left:30px;
+   top:25px;
+   z-index: 100;
+   img{
+    cursor: pointer;
+   }
+}
+.audioBox>div#my-audio{
+  width:100%;
+  padding:0 100px;
+  position:relative;
+}
+.audioBox>div#my-btn{
+  position:absolute;
+  right:30px;
+  a{
+    color:#fff;
+    margin-right:6px;
+    font-size:14px
+  }
+  top:28px;
+  z-index: 200;
+}
+.wx-audio-logo{
+  width: 48px;
+  display:none;
+  text-align: center;
+  margin-top: 5px;
+
+}
+.wx-audio-logo .wx-audio-img{
+  cursor: pointer;
+	// width: 16px;
+	// height: 16px;
+}
+
+/* line 1, ../sass/wx-audio/_audio.scss */
+.wx-audio-content {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 80%;
+  height: 100%;
+  padding: 5px 0px;
+  /*border: 1px solid rgba(33, 44, 55, 0.3);*/
+  /*margin: 0 auto;*/
+  font-size: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    position: relative;
+    top:-20px;
+  /*float: right;*/
+}
+/* line 11, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-info {
+  display: none;
+}
+/* line 14, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-left {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 42px;
+  height: 100%;
+}
+/* line 18, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-left .wx-audio-state {
+  width: 100%;
+  height: 100%;
+}
+/* line 23, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width:100%;
+  font-size: 16px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 29, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right .wx-audio-title {
+  padding-bottom: 6px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 36, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right .wx-audio-disc {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: #8c8c8c;
+}
+/* line 43, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right .wx-audio-progrees {
+    height:10px;
+    width: 72%;
+    position: absolute;
+    right: 5%;
+    top: 6px;
+    left:120px
+
+}
+/* line 47, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-progrees-detail {
+  height: 100%;
+  width: 100%;
+ background-color: rgba(115, 133, 159, .5);
+  position: relative;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* line 55, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-progrees-detail .wx-voice-p {
+  width: 0%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background:#2d8cf0;
+  z-index: 2;
+}
+/* line 66, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-progrees-detail .wx-buffer-p {
+  width: 0%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: #d9d9d9;
+  z-index: 1;
+}
+/* line 77, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-progrees-detail .wx-loading {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+/* line 85, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-progrees-detail .wx-loading .wx-loading-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -moz-animation: slidein 6s linear infinite normal;
+  -webkit-animation: slidein 6s linear infinite normal;
+  animation: slidein 6s linear infinite normal;
+  width: 200%;
+  max-width: none !important;
+  background-image: -moz-repeating-linear-gradient(-15deg, #d9d9d9, #d9d9d9 2px, #ebebeb 2px, #ebebeb 4px);
+  background-image: -webkit-repeating-linear-gradient(-15deg, #d9d9d9, #d9d9d9 2px, #ebebeb 2px, #ebebeb 4px);
+  background-image: repeating-linear-gradient(-15deg, #d9d9d9, #d9d9d9 2px, #ebebeb 2px, #ebebeb 4px);
+}
+@keyframes slidein {
+  0% {
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  100% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+/* line 108, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-audio-origin {
+  width: 20px;
+  height: 20px;
+  margin-top: -11px;
+  margin-left: -2px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: #FFF;
+  position: absolute;
+  left:0px;
+  top: 50%;
+  z-index: 2;
+}
+/* line 121, ../sass/wx-audio/_audio.scss */
+
+/* line 142, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right .wx-audio-time {
+  width: 20%;
+  height:100%;
+  position: absolute;
+  left: 0;
+  top:0px
+
+}
+/* line 149, ../sass/wx-audio/_audio.scss */
+.wx-audio-content .wx-audio-right .wx-audio-time span {
+  font-size: 14px;
+}
+// 修改备注
+
+.remarkItem{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.remarkItem>span{
+  display: inline-block;
+}
+.remarkItem>span:first-child{
+  width: 60px;
+}
+.remarkItem>span:last-child{
+  width: 364px;
+}
+// 公证申请
+#NotaryBox4 .NotaryConM {
+	height:50%;
+}
+.Notitle {
+    width: 80%;
+    margin: 42px auto 0 auto;
+    height: 48px;
+    line-height: 48px;
+}
+
+.Notitle > li {
+    display: inline-block;
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 1.4em;
+    position: relative
+}
+
+
+.Notitle > li:after {
+    content: "\003E";
+    font-size: 1.4em;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.Notitle > li:last-child:after {
+    content: "";
+}
+
+.Notitle > li.ath {
+    color: #2d8cf0;
+}
+
+.NotaryLi {
+
+    width: 100%;
+    height: 600px;
+}
+
+
+
+
+div.NotaryLi.move {
+	padding:0 80px;
+	top:80px;
+	font-size:14px;
+}
+
+div.NotaryLi.guanliyuan {
+	padding:0 80px;
+	font-size:14px;
+	top:50px;
+}
+
+div.NotaryLi.guanliyuan table tr {
+	border:none;
+}
+
+div.NotaryLi.move input {
+	width:250px;
+	border:1px solid #cecece;
+	border-radius:3px;
+}
+
+span.Ok {
+	width:140px;
+}
+div.NotaryLi.move select {
+	width:250px;
+	height:28px;
+	border:1px solid #cecece;
+	border-radius:3px;
+}
+
+.NotaryLi > div{
+    width: 100%;
+    height: 100%;
+    padding: 10px 40px;
+    // display: none;
+    margin: 10px auto;
+    border: 1px solid #dedede;
+    font-size: 1.2em;
+}
+
+#Notary01{
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    display: block;
+}
+
+
+#Notary02, #Notary03 {
+    padding: 30px;
+}
+
+.orczxz:first-child {
+    margin-bottom: 2em;
+}
+
+.orczxz > p {
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.orczxz > ul {
+    width: 50%;
+    float: left;
+    padding-left: 14px;
+    color: #666
+}
+
+.orczxz > ul > li {
+    margin-bottom: .6em
+}
+
+.orczxz:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.oryysx {
+    padding-left: 10%
+}
+
+.oryysx label {
+    display: block;
+    margin-bottom: 1em;
+}
+.oryysx label i{
+  font-style: normal
+}
+.oryysx label input {
+    width: 50%;
+    padding: 3px 6px;
+}
+
+.notaryInfoForm b {
+    color: #999;
+    font-weight: normal;
+    margin-left: 8px;
+}
+
+#Notary04{
+  text-align: center
+}
+#Notary04 p {
+    text-align: center;
+    font-size: 1.2em;
+    // padding-top: 300px;
+    // background: url("../images/right.png") no-repeat center 120px;
+    // background-size: 140px;
+}
+
+#Notary04 p a {
+    color: #2d8cf0;
+}
+.NotaryBut{
+  // position: absolute;
+  // bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 20px;
+}
+
+
+.NotaryBut > span{
+  // display: none;
+  padding: 6px 3em;
+  margin: 0 1em;
+  background-color: #2d8cf0;
+  color: #fff;
+  cursor: pointer;
+  transition: all .6s;
+}
+
+.NotaryBut > span:nth-child(2){
+  // display: inline-block;
+}
+
+.NotaryBut > span:hover{
+  background-color: #00469b
+}
+
+div.NotaryBut.sure span {
+display:block;
+margin:0 auto;
+}
+.notaryInfoForm .ivu-form-item{
+  margin-bottom: 15px
+}
+.notaryInfoForm .ivu-input-wrapper,.notaryInfoForm .ivu-select{
+  width: 65%;
+}
+.notaryInfoForm.ivu-form .ivu-form-item-label{
+  font-size: 14px;
+}

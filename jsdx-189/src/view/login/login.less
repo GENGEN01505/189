@@ -1,0 +1,410 @@
+.login{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    &-header{
+       width: 100%;
+       height:100px;
+       padding:25px 15%;
+       p{
+           display:inline-block;
+           line-height:50px;
+           color: #333333;
+           font-size:24px;
+           letter-spacing: 2.4px;
+           i{
+            display:inline-block;
+            height:50px;
+            width:2px;
+            background:#2D63C7;
+            margin:0 10px;
+           }
+           img{
+               height:50px;
+           }
+           span{
+            position: relative;
+            bottom: 15px;
+           }
+       }
+    }
+    .login-content{
+        height:77%;
+        width: 100%;
+        min-height: 378px;
+        background-image: url('../../assets/images/dlbg.png');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        .login-con{
+            position: absolute;
+            right: 160px;
+            top: 50%;
+            margin-top: -183px;
+            width: 350px;
+            &-header{
+                font-size: 16px;
+                font-weight: 300;
+                text-align: center;
+                padding: 30px 0;
+            }
+            .form-con{
+                padding: 10px 0 0;
+                input{
+                    height:40px;
+                }
+                .loginAlert{
+                    text-align: left;
+                    font-size: 12px;
+                    color:#ed4014;
+                    position: absolute;
+                    top: 35px;
+                }
+            }
+            .login-tip{
+                font-size: 12px;
+                color: #2D63C7;
+                position: relative;
+                bottom: 10px;
+                span{
+                    float:right;
+                    a{
+                        margin-right:8px;
+                    }
+                }
+            }
+        }
+        .ivu-card-body{
+          padding:16px;
+        }
+        .search-day{
+          color: #2d8cf0;
+          border: 1px solid #2d8cf0;
+          margin-left: 10px;
+          padding: 4px 10px 5px;
+          border-radius: 5px;
+          position: absolute;
+          top:10px;
+          right: 16px;
+        }
+    }
+    .login-content-yp{
+      height:77%;
+      width: 100%;
+      min-height: 450px;
+      background-image: url('../../assets/images/ypbg.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      .login-con{
+          position: absolute;
+          right: 160px;
+          top: 50%;
+          margin-top: -200px;
+          width: 350px;
+
+          &-header{
+              font-size: 16px;
+              font-weight: 300;
+              text-align: center;
+              padding: 30px 0;
+          }
+          .form-con{
+              padding: 10px 0 0;
+              input{
+                  height:40px;
+              }
+              .loginAlert{
+                  text-align: left;
+                  font-size: 12px;
+                  color:#ed4014;
+                  position: absolute;
+                  top: 35px;
+              }
+          }
+          .login-tip{
+              font-size: 12px;
+              color: #2D63C7;
+              position: relative;
+              bottom: 10px;
+              span{
+                  float:right;
+                  a{
+                      margin-right:8px;
+                  }
+              }
+          }
+      }
+      .ivu-card-body{
+        padding:16px;
+      }
+      .search-day{
+        color: #2d8cf0;
+        border: 1px solid #2d8cf0;
+        margin-left: 10px;
+        position: absolute;
+        top:10px;
+        right: 16px;
+      }
+  }
+    &-footer{
+        height:100px;
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: 0;
+        text-align: center;
+        padding-top:10px;
+     }
+     .login-form  input.verificationCodeIpt{
+      width:59%;
+      margin-right: 3%
+    }
+  .login-form .sendCodeBtn{
+      display: inline-block;
+      height: 40px;
+      width: 37%;
+      line-height: 40px;
+      text-align: center;
+      background: #AAB2B7;
+      border-radius: 4px;
+      color: #Fff;
+      cursor: pointer;
+    }
+    .login-form  .sendCodeBtn.canSendCode{
+      background: #1781E0;
+    }
+    .passAlert,.verCodeAlert{
+      text-align: left;
+      font-size: 12px;
+      color:#BBBEC4;
+      position: absolute;
+      top: 35px;
+    }
+}
+
+
+#verify_box{
+    width: 100%;
+    height:40px;
+    line-height: 40px;
+    position: relative;
+    background: #d7dde1;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border: 1px solid #dcdee2;
+}
+#verify_xbox{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color:#fff;
+    position: absolute;
+    background:#03B39F;;
+}
+#btn{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 1px rgba(212, 212, 212, 1);
+    float: right;
+}
+#btn>img{
+    width:25px;
+}
+.verifyAlert{
+    color: #ed4014;
+}
+
+// 注册
+.register{
+    width: 100%;
+    height: 100%;
+    min-width:800px;
+    &-header{
+        width: 100%;
+        height:100px;
+        padding:25px 20%;
+        position:fixed;
+        top:0;
+        background:#fff;
+        z-index: 3;
+        box-shadow: 0 2px 26px 0 rgba(0,71,157,0.09);
+        p{
+            display:inline-block;
+            line-height:42px;
+            color: #333333;
+            font-size:22px;
+            letter-spacing: 2.4px;
+            i{
+             display:inline-block;
+             height:42px;
+             width:2px;
+             background:#2D63C7;
+             margin:0 10px;
+            }
+            img{
+                height:42px;
+            }
+            span{
+             position: relative;
+             bottom: 15px;
+            }
+        }
+        .enterBrn{
+            position:absolute;
+            right:30px;
+            top:30px;
+            a{
+                font-size:14px;
+                margin-right:10px;
+                color:#666;
+            }
+        }
+     }
+     .register-content{
+         height:100%;
+         width: 100%;
+         padding-top:160px;
+         position: relative;
+         background:#F7FAFF;
+         overflow: auto;
+         .register-con{
+             width:70%;
+             margin:0 auto;
+
+             color: #333333;
+             .ivu-card {
+                min-height: 500px;
+
+             }
+             .ivu-card-body{
+                 padding:0;
+                 padding-bottom:16px;
+
+             }
+             .register-con-title{
+                 width:100%;
+                 font-size: 20px;
+                 text-align:center;
+                 border-bottom: 1px solid #E8ECEF;
+                 line-height:70px;
+                 position:relative;
+                 span{
+                     display:inline-block;
+                     width: 150px;
+                     height: 100%;
+                     text-align: center;
+                     font-size: 18px;
+                     cursor: pointer;
+                   }
+                span.onCurrent{
+                    color:#2D63C7;
+                    border-bottom:1px solid #2D63C7;
+                }
+                a{
+                    font-size:14px;
+                    color:#999;
+                    position:absolute;
+                    right:30px;
+                    b{
+                        color:#2D63C7;
+                    }
+                }
+             }
+             .steps{
+                 margin:30px auto;
+                 width: 80%;
+                 padding-left: 10%;
+             }
+             form{
+                width:400px;
+                margin:0 auto;
+                position: relative;
+                left: -60px;
+             }
+             .registerForm{
+                 padding-top:30px;
+             }
+            form input.verificationCodeIpt{
+                width:59%;
+                margin-right: 3%
+              }
+            form .sendCodeBtn{
+                display: inline-block;
+                height: 32px;
+                width: 37%;
+                line-height: 32px;
+                text-align: center;
+                background: #AAB2B7;
+                border-radius: 4px;
+                color: #Fff;
+                cursor: pointer;
+              }
+              form .sendCodeBtn.canSendCode{
+                background: #1781E0;
+              }
+              .passAlert,.verCodeAlert{
+                text-align: left;
+                font-size: 12px;
+                color:#BBBEC4;
+                position: absolute;
+                top: 30px;
+              }
+              .successPage{
+                  text-align:center;
+                  padding-top:50px;
+              }
+              .successPage>h4{
+                font-size: 20px;
+                font-weight: normal;
+                  margin-top: 30px;
+                  margin-bottom: 10px;
+              }
+              .successPage>p{
+                 font-size: 14px;
+                 color: #999;
+             }
+         }
+     }
+     &-footer{
+         height:100px;
+         font-size: 14px;
+         color: #333333;
+         letter-spacing: 0;
+         text-align: center;
+         padding-top:10px;
+      }
+}
+.ivu-spin-fix {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.pass_alert{
+  width: 400px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255,0,0,.1);
+  color: #ff5620;
+  border-radius: 5px;
+  margin-top:20px;
+  border: 1px solid #ff7043
+}
+
+@media only screen and ( max-width: 1100px ) {
+   .login-header{
+    padding:25px 50px;
+  }
+}
+@media only screen and ( max-width: 800px ) {
+  .login-header span,.login-header i{
+    display: none;
+ }
+}
